@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PetEXPRESS">
         <activity
+            android:name=".ArticulosActivity"
+            android:exported="false" />
+        <activity
             android:name=".CarritoActivity"
             android:exported="false" />
         <activity
@@ -38,7 +41,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>
