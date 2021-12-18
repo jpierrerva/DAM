@@ -101,7 +101,6 @@
 
         </RelativeLayout>
 
-
     </LinearLayout>
 
     <LinearLayout
@@ -160,7 +159,64 @@
 
 
         </RelativeLayout>
-
-
     </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ln23"
+        android:layout_width="311dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="400dp"
+        android:background="@drawable/borde"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btncomida"
+        app:layout_constraintVertical_bias="0.08">
+
+        <RelativeLayout
+            android:id="@+id/fondo3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="118dp"
+                android:layout_height="117dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/casa1g" />
+
+            <TextView
+                android:id="@+id/textView213"
+                android:layout_width="89dp"
+                android:layout_height="36dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Ferribiella Igloo Gato con Estampado Manchado"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView241"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="108.00"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/button13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Agregar" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
