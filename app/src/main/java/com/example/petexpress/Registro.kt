@@ -1,5 +1,6 @@
 package com.example.petexpress
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.core.util.PatternsCompat
@@ -15,6 +16,11 @@ class Registro : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnregistrar.setOnClickListener{ validate()}
+
+        binding.btnCancelar.setOnClickListener{
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 
