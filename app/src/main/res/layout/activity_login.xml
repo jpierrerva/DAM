@@ -64,20 +64,20 @@
             android:text="¿Olvidaste tu contraseña?" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/tvRegistrate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="#152DFF"
-            android:textSize="18sp"
             android:layout_marginBottom="10sp"
-            android:text="¿No tienes una cuenta? Regístrate" />
+            android:text="¿No tienes una cuenta? Regístrate"
+            android:textColor="#152DFF"
+            android:textSize="18sp" />
 
         <Button
             android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#3774EF"
-            android:textAllCaps="false"
-            android:text="Iniciar Sesión" />
+            android:text="Iniciar Sesión"
+            android:textAllCaps="false" />
     </LinearLayout>
 </FrameLayout>
