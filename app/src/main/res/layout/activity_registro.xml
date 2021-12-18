@@ -38,7 +38,7 @@
     <EditText
         android:id="@+id/nombre"
         android:layout_width="300dp"
-        android:layout_height="37dp"
+        android:layout_height="48dp"
         android:background="@drawable/caja_texto"
         android:backgroundTint="#F6E9F8"
         android:hint="Nombre"
@@ -49,12 +49,12 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.402" />
+        app:layout_constraintVertical_bias="0.411" />
 
     <EditText
         android:id="@+id/apellido"
         android:layout_width="300dp"
-        android:layout_height="37dp"
+        android:layout_height="48dp"
         android:background="@drawable/caja_texto"
         android:backgroundTint="#F6E9F8"
         android:hint="Apellido"
@@ -65,12 +65,12 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.482" />
+        app:layout_constraintVertical_bias="0.499" />
 
     <EditText
         android:id="@+id/correo"
         android:layout_width="300dp"
-        android:layout_height="37dp"
+        android:layout_height="48dp"
         android:background="@drawable/caja_texto"
         android:backgroundTint="#F6E9F8"
         android:hint="Email"
@@ -82,12 +82,12 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.573" />
+        app:layout_constraintVertical_bias="0.592" />
 
     <EditText
         android:id="@+id/contra"
         android:layout_width="300dp"
-        android:layout_height="37dp"
+        android:layout_height="48dp"
         android:background="@drawable/caja_texto"
         android:backgroundTint="#F6E9F8"
         android:hint="Contraseña"
@@ -99,7 +99,7 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.657" />
+        app:layout_constraintVertical_bias="0.685" />
 
     <Button
         android:id="@+id/btnregistrar"
