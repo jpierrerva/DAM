@@ -11,25 +11,43 @@
         android:theme="@style/Theme.PetEXPRESS">
         <activity
             android:name=".ArticulosActivity"
-            android:exported="false" />
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".CarritoActivity"
-            android:exported="false" />
+            android:exported="false" >
+
+        </activity>
         <activity
             android:name=".PagoActivity"
-            android:exported="true" />
+            android:exported="true" >
+
+        </activity>
         <activity
             android:name=".InformacionActivity"
-            android:exported="true" />
+            android:exported="true" >
+
+        </activity>
         <activity
             android:name=".SeleccionMascotasActivity"
-            android:exported="true" />
+            android:exported="true" >
+
+        </activity>
         <activity
             android:name=".Registro"
-            android:exported="true" />
+            android:exported="true" >
+
+        </activity>
         <activity
             android:name=".LoginActivity"
-            android:exported="true" />
+            android:exported="true" >
+
+        </activity>
         <activity
             android:name=".SplashActivity"
             android:exported="true">

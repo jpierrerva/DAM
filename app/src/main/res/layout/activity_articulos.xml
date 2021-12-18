@@ -12,10 +12,11 @@
         android:id="@+id/btncasa"
         android:layout_width="95dp"
         android:layout_height="49dp"
-        android:layout_marginStart="36dp"
         android:layout_marginTop="24dp"
         android:text="casa"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.151"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
@@ -24,12 +25,11 @@
         android:id="@+id/btncomida"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="28dp"
         android:text="comida"
-        app:layout_constraintEnd_toStartOf="@+id/btnropa"
-        app:layout_constraintStart_toEndOf="@+id/btncasa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
@@ -37,19 +37,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="36dp"
         android:text="ropa"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/btncomida"
+        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
         android:layout_width="388dp"
         android:layout_height="155dp"
         android:layout_marginHorizontal="10dp"
-        android:orientation="vertical"
         android:background="@drawable/borde"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -58,10 +57,10 @@
         app:layout_constraintVertical_bias="0.166">
 
         <RelativeLayout
-            android:layout_width="388dp"
-            android:layout_height="155dp"
             android:id="@+id/fondo"
-            >
+            android:layout_width="388dp"
+            android:layout_height="155dp">
+
             <ImageView
                 android:id="@+id/imageView4"
                 android:layout_width="118dp"
@@ -74,37 +73,32 @@
                 android:id="@+id/textView21"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="NOMBRE"
-                android:textColor="@color/black"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="10dp"
-                />
+                android:text="NOMBRE"
+                android:textColor="@color/black" />
 
             <TextView
                 android:id="@+id/textView22"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="PRECIO"
-                android:textColor="@color/black"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
-                />
+                android:text="PRECIO"
+                android:textColor="@color/black" />
 
             <Button
                 android:id="@+id/button11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Button"
-                android:layout_alignParentBottom="true"
                 android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="10dp"
-                />
+                android:text="Button" />
 
 
         </RelativeLayout>
-
-
 
 
     </LinearLayout>
