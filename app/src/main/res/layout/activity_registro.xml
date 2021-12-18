@@ -94,6 +94,7 @@
         android:paddingLeft="50px"
         android:paddingTop="20px"
         app:errorEnabled="true"
+        android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
