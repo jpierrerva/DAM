@@ -24,7 +24,7 @@
         app:srcCompat="@drawable/blanco" />
 
     <ImageView
-        android:id="@+id/imageView12"
+        android:id="@+id/imgPerro"
         android:layout_width="607dp"
         android:layout_height="353dp"
         android:layout_marginBottom="-9dp"
@@ -36,10 +36,10 @@
         app:srcCompat="@drawable/huellas" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/imgGato"
         android:layout_width="wrap_content"
         android:layout_height="181dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView12"
+        app:layout_constraintBottom_toTopOf="@+id/imgPerro"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.567"
         app:layout_constraintStart_toStartOf="parent"

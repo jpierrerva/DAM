@@ -13,7 +13,7 @@ class ArticulosActivity : AppCompatActivity() {
 
         val bundleRecepcion = intent.extras
 
-        val animal = bundleRecepcion!!.getString("key_animal")
+       // val animal = bundleRecepcion!!.getString("key_animal")
 
     }
 }

@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/imageView12"
+            android:id="@+id/imgPerro"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:srcCompat="@drawable/perrito" />
@@ -38,7 +38,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/imageView5"
+            android:id="@+id/imgGato"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:srcCompat="@drawable/gatito" />
@@ -56,7 +56,7 @@
         app:layout_constraintTop_toBottomOf="@+id/frameLayout3">
 
         <ImageView
-            android:id="@+id/imageView6"
+            android:id="@+id/imgConejo"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:srcCompat="@drawable/conejito" />
@@ -92,7 +92,7 @@
         app:layout_constraintTop_toBottomOf="@+id/frameLayout4">
 
         <ImageView
-            android:id="@+id/imageView8"
+            android:id="@+id/imgPez"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:srcCompat="@drawable/pez" />
@@ -110,7 +110,7 @@
         app:layout_constraintTop_toBottomOf="@+id/frameLayout5">
 
         <ImageView
-            android:id="@+id/imageView9"
+            android:id="@+id/imgOtros"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/otros" />

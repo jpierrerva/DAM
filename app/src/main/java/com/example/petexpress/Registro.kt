@@ -24,8 +24,8 @@ class Registro : AppCompatActivity() {
 
         binding.btnregistrar.setOnClickListener{
 
-            val correo = binding.correo.toString()
-            val contra = binding.contra.toString()
+            val correo = binding.correo.text.toString()
+            val contra = binding.contra.text.toString()
 
             if(correo.isEmpty()){
                 Toast.makeText(this, "Ingrese correo", Toast.LENGTH_SHORT).show()
@@ -45,18 +45,18 @@ class Registro : AppCompatActivity() {
     }
 
     private fun createAccount(correo : String, contrasenia : String){
-        auth.signInWithEmailAndPassword(correo, contrasenia)
+        auth.createUserWithEmailAndPassword(correo, contrasenia)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
+                    Toast.makeText(this, "Se ha registrado correctamente", Toast.LENGTH_SHORT).show()
 
                 } else {
                     // If sign in fails, display a message to the user.
-                    Log.w("TAG", "signInWithEmail:failure", task.exception)
+                    Log.w("TAG", "createUserWithEmail:failure", task.exception)
                     Toast.makeText(baseContext, "Authentication failed.",
                         Toast.LENGTH_SHORT).show()
                 }
             }
-
     }
 
     private fun validate(){
