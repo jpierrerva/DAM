@@ -29,6 +29,7 @@ class ArticulosActivity : AppCompatActivity() {
         //setContentView(R.layout.activity_articulos)
         binding = ActivityArticulosBinding.inflate(layoutInflater)
         setContentView(binding.root)
+<<<<<<< HEAD
 
 
         val bundleRecepcion = intent.extras
@@ -63,6 +64,13 @@ class ArticulosActivity : AppCompatActivity() {
 
                val stock = it.child("stock").getValue() as Long
                val url = it.child("imagen").getValue() as String
+=======
+        val bundleRecepcion = intent.extras
+
+
+
+       // val animal = bundleRecepcion!!.getString("key_animal")
+>>>>>>> c7a917b956750f0c2dcb8800d6283e5b98d97129
 
                val articulo1 =  Articulo(id, nombre, categoria, mascota, precio, stock.toInt(), url)
 
