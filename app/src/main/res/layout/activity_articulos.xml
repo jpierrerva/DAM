@@ -45,7 +45,7 @@
 
     <LinearLayout
         android:layout_width="311dp"
-        android:layout_height="137dp"
+        android:layout_height="150dp"
         android:background="@drawable/borde"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
