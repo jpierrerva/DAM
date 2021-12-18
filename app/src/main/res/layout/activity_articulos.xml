@@ -43,61 +43,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <LinearLayout
-        android:layout_width="311dp"
-        android:layout_height="150dp"
-        android:background="@drawable/borde"
-        android:orientation="vertical"
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvArticulos"
+        android:layout_width="wrap_content"
+        android:layout_height="466dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btncomida"
-        app:layout_constraintVertical_bias="0.08">
-
-        <RelativeLayout
-            android:id="@+id/fondo"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <ImageView
-                android:id="@+id/imageView4"
-                android:layout_width="118dp"
-                android:layout_height="117dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="20dp"
-                android:src="@drawable/casa2" />
-
-            <TextView
-                android:id="@+id/textView21"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="10dp"
-                android:text="NOMBRE"
-                android:textColor="@color/black" />
-
-            <TextView
-                android:id="@+id/textView22"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
-                android:text="PRECIO"
-                android:textColor="@color/black" />
-
-            <Button
-                android:id="@+id/button11"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="10dp"
-                android:text="Button" />
-
-
-        </RelativeLayout>
-
-
-    </LinearLayout>
+        app:layout_constraintTop_toBottomOf="@+id/btncomida"
+        app:layout_constraintVertical_bias="0.202"
+        tools:listitem="@layout/itemproducto" />
 </androidx.constraintlayout.widget.ConstraintLayout>

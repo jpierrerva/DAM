@@ -13,11 +13,54 @@ class SeleccionMascotasActivity : AppCompatActivity() {
         binding = ActivitySeleccionMascotaBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        var animal=""
+
         binding.imgPerro.setOnClickListener{
+            animal = "perro";
             val intent = Intent(this, ArticulosActivity::class.java)
-            startActivity(intent)
+            val bundle = Bundle();
+            bundle.putString("key_animal",animal)
+            intent.putExtras(bundle)
+            startActivity(intent);
+        }
+        binding.imgGato.setOnClickListener{
+            animal = "gato";
+            val intent = Intent(this, ArticulosActivity::class.java)
+            val bundle = Bundle();
+            bundle.putString("key_animal",animal)
+            intent.putExtras(bundle)
+            startActivity(intent);
+        }
+
+        binding.imgGato.setOnClickListener{
+            animal = "conejo";
+            val intent = Intent(this, ArticulosActivity::class.java)
+            val bundle = Bundle();
+            bundle.putString("key_animal",animal)
+            intent.putExtras(bundle)
+            startActivity(intent);
+        }
+
+        binding.imgGato.setOnClickListener{
+            animal = "pollo";
+            val intent = Intent(this, ArticulosActivity::class.java)
+            val bundle = Bundle();
+            bundle.putString("key_animal",animal)
+            intent.putExtras(bundle)
+            startActivity(intent);
+        }
+
+        binding.imgGato.setOnClickListener{
+            animal = "pez";
+            val intent = Intent(this, ArticulosActivity::class.java)
+            val bundle = Bundle();
+            bundle.putString("key_animal",animal)
+            intent.putExtras(bundle)
+            startActivity(intent);
         }
 
 
     }
+
+
 }
