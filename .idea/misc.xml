@@ -3,12 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/NADYA/Documents/GitHub/DAM/app/src/main/res/layout/activity_registro.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/gabriel/Desktop/DAM/DAM/app/src/main/res/layout/activity_carrito.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/gabriel/Desktop/DAM/DAM/app/src/main/res/layout/activity_informacion.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/gabriel/Desktop/DAM/DAM/app/src/main/res/layout/activity_login.xml" value="0.33" />
-        <entry key="..\:/Users/gabriel/Desktop/DAM/DAM/app/src/main/res/layout/activity_pago.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/gabriel/Desktop/DAM/DAM/app/src/main/res/layout/activity_registro.xml" value="0.25" />
+        <entry key="..\:/Users/Administrador/AndroidStudioProjects/2021.2 Desarrollo AppM/ProyectoPet/DAM/app/src/main/res/drawable/borde_celeste.xml" value="0.109375" />
+        <entry key="..\:/Users/Administrador/AndroidStudioProjects/2021.2 Desarrollo AppM/ProyectoPet/DAM/app/src/main/res/layout/activity_carrito.xml" value="0.1" />
+        <entry key="..\:/Users/Administrador/AndroidStudioProjects/2021.2 Desarrollo AppM/ProyectoPet/DAM/app/src/main/res/layout/activity_registro.xml" value="0.22" />
         <entry key="..\:/Users/gabriel/Desktop/DAM/DAM/app/src/main/res/layout/activity_seleccion_mascota.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/gabriel/Desktop/DAM/app/src/main/res/drawable-v24/borde.xml" value="0.2203125" />
         <entry key="..\:/Users/gabriel/Desktop/DAM/app/src/main/res/drawable-v24/caja_texto.xml" value="0.2203125" />
