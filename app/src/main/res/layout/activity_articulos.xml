@@ -5,38 +5,107 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ArticulosActivity"
-    android:background="#C7B1EA"
+    android:background="@color/purple_200"
     >
+
+    <Button
+        android:id="@+id/btncasa"
+        android:layout_width="95dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="24dp"
+        android:text="casa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/btncomida"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="36dp"
-        android:text="COMIDA"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="28dp"
+        android:text="comida"
+        app:layout_constraintEnd_toStartOf="@+id/btnropa"
+        app:layout_constraintStart_toEndOf="@+id/btncasa"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnropa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="36dp"
-        android:text="ROPA"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="36dp"
+        android:text="ropa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/btncomida"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/btncasa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="40dp"
-        android:text="CASA"
+    <LinearLayout
+        android:layout_width="388dp"
+        android:layout_height="155dp"
+        android:layout_marginHorizontal="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/borde"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/btnropa"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.166">
+
+        <RelativeLayout
+            android:layout_width="388dp"
+            android:layout_height="155dp"
+            android:id="@+id/fondo"
+            >
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="118dp"
+                android:layout_height="117dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/casa2" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NOMBRE"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRECIO"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                />
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Button"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                />
+
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
