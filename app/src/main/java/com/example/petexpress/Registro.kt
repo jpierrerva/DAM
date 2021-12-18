@@ -9,6 +9,7 @@ import java.util.regex.Pattern
 class Registro : AppCompatActivity() {
     private lateinit var binding:ActivityRegistroBinding
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding= ActivityRegistroBinding.inflate(layoutInflater)
