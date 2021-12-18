@@ -3,24 +3,59 @@ package com.example.petexpress
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import android.widget.Toast
 import androidx.core.util.PatternsCompat
 import com.example.petexpress.databinding.ActivityRegistroBinding
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 import java.util.regex.Pattern
 
 class Registro : AppCompatActivity() {
     private lateinit var binding:ActivityRegistroBinding
+    private lateinit var auth:FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding= ActivityRegistroBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        auth = Firebase.auth
 
-        binding.btnregistrar.setOnClickListener{ validate()}
+        binding.btnregistrar.setOnClickListener{
+
+            val correo = binding.correo.toString()
+            val contra = binding.contra.toString()
+
+            if(correo.isEmpty()){
+                Toast.makeText(this, "Ingrese correo", Toast.LENGTH_SHORT).show()
+            } else if ( contra.isEmpty()){
+                Toast.makeText(this, "Ingrese contrasenia", Toast.LENGTH_SHORT).show()
+            } else{
+                createAccount(correo, contra)
+            }
+
+        }
 
         binding.btnCancelar.setOnClickListener{
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }
+
+    }
+
+    private fun createAccount(correo : String, contrasenia : String){
+        auth.signInWithEmailAndPassword(correo, contrasenia)
+            .addOnCompleteListener(this) { task ->
+                if (task.isSuccessful) {
+
+                } else {
+                    // If sign in fails, display a message to the user.
+                    Log.w("TAG", "signInWithEmail:failure", task.exception)
+                    Toast.makeText(baseContext, "Authentication failed.",
+                        Toast.LENGTH_SHORT).show()
+                }
+            }
 
     }
 

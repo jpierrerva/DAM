@@ -5,13 +5,21 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.example.petexpress.databinding.ActivityLoginBinding
+import com.example.petexpress.databinding.ActivityRegistroBinding
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 
 class LoginActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityLoginBinding
+    private lateinit var auth: FirebaseAuth
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        val binding= ActivityLoginBinding.inflate(layoutInflater)
+        binding= ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        auth = Firebase.auth
 
         binding.btnLogin.setOnClickListener{
             val correo = binding.edtEmail.text.toString()
