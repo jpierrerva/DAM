@@ -10,8 +10,9 @@ class ArticulosActivity : AppCompatActivity() {
         //setContentView(R.layout.activity_articulos)
         val binding = ActivityArticulosBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
         val bundleRecepcion = intent.extras
+
+
 
        // val animal = bundleRecepcion!!.getString("key_animal")
 
