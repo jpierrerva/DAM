@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/fondo_login" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/redondo"
+        android:padding="25sp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="20sp"
+            android:text="Bienvenido a PetExpress" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="20sp"
+            android:padding="20sp"
+            android:background="@drawable/caja_texto_redondo"
+            android:hint="Ingresa tu email" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="20sp"
+            android:padding="20sp"
+            android:background="@drawable/caja_texto_redondo"
+            android:hint="Ingresa tu contraseña" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#152DFF"
+            android:textSize="18sp"
+            android:layout_marginBottom="10sp"
+            android:text="¿Olvidaste tu contraseña?" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#152DFF"
+            android:textSize="18sp"
+            android:layout_marginBottom="10sp"
+            android:text="¿No tienes una cuenta? Regístrate" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#3774EF"
+            android:textAllCaps="false"
+            android:text="Iniciar Sesión" />
+    </LinearLayout>
+</FrameLayout>
