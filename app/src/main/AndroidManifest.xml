@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PetEXPRESS">
         <activity
+            android:name=".CarritoActivity"
+            android:exported="false" />
+        <activity
             android:name=".PagoActivity"
             android:exported="true" />
         <activity
@@ -32,12 +35,10 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>>
+        </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
     </application>
 
 </manifest>
